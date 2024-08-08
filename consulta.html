@@ -1,0 +1,25 @@
+<div class="container">
+    <h4 class="font-weight-bold my-5">Consulta de Usuario</h4>
+    <div class="input-group" style="position: relative;">
+        <input type="text" class="form-control" placeholder="Buscar por nombre" id="nombre" name="nombre">
+        <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+        <div id="suggestions" class="autocomplete-suggestions"></div> <!-- Contenedor de sugerencias -->
+    </div>
+
+    <div id="alerta"></div>
+
+    <table class="table mt-5" id="tablaResultados">
+        <thead>
+            <tr class="bg-dark text-white">
+                <th scope="col">Nombre</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Puesto</th>
+                <th scope="col">Estatus</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Aquí se llenará la tabla con AJAX -->
+        </tbody>
+    </table>
+    
+    <div id="resultados"></div>
+</div>
